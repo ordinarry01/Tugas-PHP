@@ -20,9 +20,9 @@ class Mahasiswa{
     public function grade(){
         if ($this-> nilai >=85 && $this-> nilai <100 ) return "A";
         else if ($this-> nilai >=75 && $this-> nilai <85 ) return "B";
-        else if ($this-> nilai >=65 && $this-> nilai <75 ) return "C";
-        else if ($this-> nilai >=55 && $this-> nilai <65 ) return "D";
-        else if ($this-> nilai >=0 && $this-> nilai <55 ) return "E";
+        else if ($this-> nilai >=60 && $this-> nilai <75 ) return "C";
+        else if ($this-> nilai >=40 && $this-> nilai <60 ) return "D";
+        else if ($this-> nilai >=0 && $this-> nilai <40 ) return "E";
         else return "";
     }
     
@@ -33,11 +33,11 @@ class Mahasiswa{
             case 'B' : 
                 return "Memuaskan";
             case 'C' : 
-                return "Bagus";
-            case 'D' : 
                 return "Cukup";
-            case 'E' : 
+            case 'D' : 
                 return "Kurang";
+            case 'E' : 
+                return "Sangat Kurang";
             default:
                 return "";
         }
